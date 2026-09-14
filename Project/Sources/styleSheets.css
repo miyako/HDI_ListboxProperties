@@ -13,12 +13,20 @@
 		fill: #FFFACD;
 		alternateFill: #B1C4DD;
 	}
+
+	.hdi-page-header {
+		fill: #B8CBE5;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	.hdi-extra-rows {
 		fill: #3A3320;
 		alternateFill: #2B3A4D;
+	}
+
+	.hdi-page-header {
+		fill: #2A3A4D;
 	}
 }
 

@@ -322,11 +322,11 @@
 					"left": 0,
 					"width": 220,
 					"height": 20,
-					"fill": "#B8CBE5",
 					"textAlign": "center",
 					"fontTheme": "main",
 					"text": ":xliff:Properties",
-					"stroke": "automatic"
+					"stroke": "automatic",
+					"class": "hdi-page-header"
 				},
 				"Round Rectangle12": {
 					"type": "rectangle",
