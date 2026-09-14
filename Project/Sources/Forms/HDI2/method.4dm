@@ -1,4 +1,4 @@
-C_TEXT:C284(vResult)
+var vResult : Text
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)

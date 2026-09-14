@@ -1,0 +1,23 @@
+/* Cross-platform styles, including dark mode support */
+
+.default {
+	stroke: automatic;
+}
+
+.HDI {
+	stroke: automatic;
+}
+
+@media (prefers-color-scheme: light) {
+	.hdi-extra-rows {
+		fill: #FFFACD;
+		alternateFill: #B1C4DD;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-extra-rows {
+		fill: #3A3320;
+		alternateFill: #2B3A4D;
+	}
+}

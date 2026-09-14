@@ -86,9 +86,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "middle"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Variable": {
 					"type": "input",
@@ -324,7 +327,8 @@
 					"fill": "#B8CBE5",
 					"textAlign": "center",
 					"fontTheme": "main",
-					"text": ":xliff:Properties"
+					"text": ":xliff:Properties",
+					"stroke": "automatic"
 				},
 				"Round Rectangle12": {
 					"type": "rectangle",
@@ -394,51 +398,54 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Button": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:None",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button1": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Single",
 					"focusable": false,
 					"method": "ObjectMethods/Button1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button2": {
 					"type": "button",
 					"top": 270,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Multiple",
 					"focusable": false,
 					"method": "ObjectMethods/Button2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text25": {
 					"type": "text",
@@ -449,7 +456,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text26": {
 					"type": "text",
@@ -460,7 +468,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable5": {
 					"type": "input",
@@ -484,14 +493,14 @@
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Selection mode",
 					"focusable": false,
 					"method": "ObjectMethods/Button38.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text47": {
 					"type": "text",
@@ -499,7 +508,8 @@
 					"left": 240,
 					"width": 680,
 					"height": 113,
-					"text": ":xliff:This parameter defines the number of rows that can be selected by the user."
+					"text": ":xliff:This parameter defines the number of rows that can be selected by the user.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -563,7 +573,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB2_Col2",
@@ -594,7 +605,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB2_Col3",
@@ -625,37 +637,41 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"resizingMode": "legacy"
 				},
 				"Button3": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Manual",
 					"focusable": false,
 					"method": "ObjectMethods/Button3.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button4": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Automatic",
 					"focusable": false,
 					"method": "ObjectMethods/Button4.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text27": {
 					"type": "text",
@@ -666,7 +682,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text28": {
 					"type": "text",
@@ -677,7 +694,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable6": {
 					"type": "input",
@@ -701,14 +719,14 @@
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Column resizing mode",
 					"focusable": false,
 					"method": "ObjectMethods/Button39.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text48": {
 					"type": "text",
@@ -716,7 +734,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines the way columns should be resized."
+					"text": ":xliff:This parameter defines the way columns should be resized.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -843,35 +862,37 @@
 								"verticalAlign": "automatic"
 							}
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Button7": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 182,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:All columns without \"…\"",
 					"focusable": false,
 					"method": "ObjectMethods/Button7.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button8": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 182,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:All columns with \"…\"",
 					"focusable": false,
 					"method": "ObjectMethods/Button8.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text29": {
 					"type": "text",
@@ -882,7 +903,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text30": {
 					"type": "text",
@@ -893,7 +915,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable7": {
 					"type": "input",
@@ -917,56 +940,56 @@
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Truncate mode Col1",
 					"focusable": false,
 					"method": "ObjectMethods/Button40.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button83": {
 					"type": "button",
 					"top": 390,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Truncate mode Col2",
 					"focusable": false,
 					"method": "ObjectMethods/Button83.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button84": {
 					"type": "button",
 					"top": 270,
 					"left": 740,
 					"width": 182,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1 without \"…\"",
 					"focusable": false,
 					"method": "ObjectMethods/Button84.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button85": {
 					"type": "button",
 					"top": 300,
 					"left": 740,
 					"width": 182,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1 with \"…\"",
 					"focusable": false,
 					"method": "ObjectMethods/Button85.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text49": {
 					"type": "text",
@@ -974,7 +997,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines the way contents of cells should be truncated."
+					"text": ":xliff:This parameter defines the way contents of cells should be truncated.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -985,28 +1009,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Hide",
 					"focusable": false,
 					"method": "ObjectMethods/Button5.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button6": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Display",
 					"focusable": false,
 					"method": "ObjectMethods/Button6.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text31": {
 					"type": "text",
@@ -1017,7 +1041,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text32": {
 					"type": "text",
@@ -1028,7 +1053,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable8": {
 					"type": "input",
@@ -1052,14 +1078,14 @@
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Extra rows",
 					"focusable": false,
 					"method": "ObjectMethods/Button41.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB4": {
 					"type": "listbox",
@@ -1078,8 +1104,6 @@
 					"selectionName": "SelA",
 					"detailForm": "Input_A",
 					"scrollbarHorizontal": "hidden",
-					"fill": "#FFFACD",
-					"alternateFill": "#B1C4DD",
 					"events": [
 						"onClick",
 						"onDataChange",
@@ -1094,8 +1118,6 @@
 							"minWidth": 50,
 							"maxWidth": 400,
 							"stroke": "automatic",
-							"fill": "#FFFACD",
-							"alternateFill": "#B1C4DD",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1116,7 +1138,8 @@
 								"fill": "#FFFACD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c14",
@@ -1126,8 +1149,6 @@
 							"minWidth": 50,
 							"maxWidth": 400,
 							"stroke": "automatic",
-							"fill": "#FFFACD",
-							"alternateFill": "#B1C4DD",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1148,7 +1169,8 @@
 								"fill": "#FFFACD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c15",
@@ -1158,8 +1180,6 @@
 							"minWidth": 50,
 							"maxWidth": 400,
 							"stroke": "automatic",
-							"fill": "#FFFACD",
-							"alternateFill": "#B1C4DD",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1180,9 +1200,11 @@
 								"fill": "#FFFACD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"class": "hdi-extra-rows"
 				},
 				"Text50": {
 					"type": "text",
@@ -1190,7 +1212,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to set up the way the extra rows should be drawn"
+					"text": ":xliff:This parameter allows you to set up the way the extra rows should be drawn",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -1201,28 +1224,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Do not allow LB",
 					"focusable": false,
 					"method": "ObjectMethods/Button9.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button10": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Allow LB",
 					"focusable": false,
 					"method": "ObjectMethods/Button10.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB5": {
 					"type": "listbox",
@@ -1286,7 +1309,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB5_Col2",
@@ -1326,7 +1350,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P5_Col2",
@@ -1357,9 +1382,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text33": {
 					"type": "text",
@@ -1370,7 +1398,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text34": {
 					"type": "text",
@@ -1381,7 +1410,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable9": {
 					"type": "input",
@@ -1405,56 +1435,56 @@
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Word wrap Col1",
 					"focusable": false,
 					"method": "ObjectMethods/Button42.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button16": {
 					"type": "button",
 					"top": 269,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Do not allow Col1",
 					"focusable": false,
 					"method": "ObjectMethods/Button16.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button43": {
 					"type": "button",
 					"top": 300,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Allow Col1",
 					"focusable": false,
 					"method": "ObjectMethods/Button43.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button44": {
 					"type": "button",
 					"top": 390,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Word wrap Col2",
 					"focusable": false,
 					"method": "ObjectMethods/Button44.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text51": {
 					"type": "text",
@@ -1462,7 +1492,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines if the cells allow wordwrap or not."
+					"text": ":xliff:This parameter defines if the cells allow wordwrap or not.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -1473,56 +1504,56 @@
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1: no",
 					"focusable": false,
 					"method": "ObjectMethods/Button11.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button12": {
 					"type": "button",
 					"top": 270,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1: yes",
 					"focusable": false,
 					"method": "ObjectMethods/Button12.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button17": {
 					"type": "button",
 					"top": 180,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:All Col.: No",
 					"focusable": false,
 					"method": "ObjectMethods/Button17.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button18": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:All Col.: Yes",
 					"focusable": false,
 					"method": "ObjectMethods/Button18.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB6": {
 					"type": "listbox",
@@ -1582,7 +1613,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col2",
@@ -1613,7 +1645,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col3",
@@ -1644,9 +1677,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text35": {
 					"type": "text",
@@ -1657,7 +1693,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text36": {
 					"type": "text",
@@ -1668,49 +1705,50 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button13": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": "Col1",
 					"focusable": false,
 					"method": "ObjectMethods/Button13.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button14": {
 					"type": "button",
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": "Col2",
 					"focusable": false,
 					"method": "ObjectMethods/Button14.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button15": {
 					"type": "button",
 					"top": 390,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": "Col3",
 					"focusable": false,
 					"method": "ObjectMethods/Button15.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable10": {
 					"type": "input",
@@ -1735,7 +1773,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines if the columns can be resized or not."
+					"text": ":xliff:This parameter defines if the columns can be resized or not.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -1800,7 +1839,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col5",
@@ -1831,7 +1871,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col6",
@@ -1862,37 +1903,40 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Button22": {
 					"type": "button",
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Hide",
 					"focusable": false,
 					"method": "ObjectMethods/Button22.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button23": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Show",
 					"focusable": false,
 					"method": "ObjectMethods/Button23.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text1": {
 					"type": "text",
@@ -1903,7 +1947,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -1914,7 +1959,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable11": {
 					"type": "input",
@@ -1938,14 +1984,14 @@
 					"top": 360,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Highlight hidden",
 					"focusable": false,
 					"method": "ObjectMethods/Button45.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text55": {
 					"type": "text",
@@ -1953,7 +1999,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines if the system highlight should be displayed or not."
+					"text": ":xliff:This parameter defines if the system highlight should be displayed or not.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -1964,42 +2011,42 @@
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:2 Lines",
 					"focusable": false,
 					"method": "ObjectMethods/Button19.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button20": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:60 Pixels",
 					"focusable": false,
 					"method": "ObjectMethods/Button20.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button21": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Row height unit",
 					"focusable": false,
 					"method": "ObjectMethods/Button21.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB8": {
 					"type": "listbox",
@@ -2061,7 +2108,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col8",
@@ -2092,7 +2140,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col9",
@@ -2123,9 +2172,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text3": {
 					"type": "text",
@@ -2136,7 +2188,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text4": {
 					"type": "text",
@@ -2147,7 +2200,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Variable2": {
 					"type": "input",
@@ -2172,7 +2226,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines the unit to be used for the row height."
+					"text": ":xliff:This parameter defines the unit to be used for the row height.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -2183,42 +2238,42 @@
 					"top": 180,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Do nothing",
 					"focusable": false,
 					"method": "ObjectMethods/Button24.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button25": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Edit record",
 					"focusable": false,
 					"method": "ObjectMethods/Button25.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button26": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Display record",
 					"focusable": false,
 					"method": "ObjectMethods/Button26.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB9": {
 					"type": "listbox",
@@ -2274,7 +2329,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col11",
@@ -2306,7 +2362,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col12",
@@ -2338,9 +2395,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text5": {
 					"type": "text",
@@ -2351,7 +2411,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text6": {
 					"type": "text",
@@ -2362,21 +2423,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button46": {
 					"type": "button",
 					"top": 300,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Get action",
 					"focusable": false,
 					"method": "ObjectMethods/Button46.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable12": {
 					"type": "input",
@@ -2401,7 +2463,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameters defines what should happen when a row is double-clicked by the user."
+					"text": ":xliff:This parameters defines what should happen when a row is double-clicked by the user.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -2412,28 +2475,28 @@
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Detail form name",
 					"focusable": false,
 					"method": "ObjectMethods/Button27.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button28": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Detail form name",
 					"focusable": false,
 					"method": "ObjectMethods/Button28.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable3": {
 					"type": "input",
@@ -2523,7 +2586,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col14",
@@ -2555,7 +2619,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col15",
@@ -2587,9 +2652,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text7": {
 					"type": "text",
@@ -2600,7 +2668,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text8": {
 					"type": "text",
@@ -2611,7 +2680,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Text43": {
 					"type": "text",
@@ -2622,7 +2692,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": "(Input_A / Input_B)"
+					"text": ":xliff:(Input_A / Input_B)",
+					"stroke": "automatic"
 				},
 				"Text59": {
 					"type": "text",
@@ -2630,7 +2701,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines the name of the detail form to be used to edit or display records when the user double clicks on a row."
+					"text": ":xliff:This parameter defines the name of the detail form to be used to edit or display records when the user double clicks on a row.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -2641,28 +2713,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Do not allow sort",
 					"focusable": false,
 					"method": "ObjectMethods/Button29.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button30": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Allow sort",
 					"focusable": false,
 					"method": "ObjectMethods/Button30.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB11": {
 					"type": "listbox",
@@ -2718,7 +2790,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col17",
@@ -2750,7 +2823,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col18",
@@ -2782,9 +2856,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text9": {
 					"type": "text",
@@ -2795,7 +2872,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text10": {
 					"type": "text",
@@ -2806,21 +2884,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button47": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Sort allowed",
 					"focusable": false,
 					"method": "ObjectMethods/Button47.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable13": {
 					"type": "input",
@@ -2845,7 +2924,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines if the list box should be sortable or not by clicking on the headers."
+					"text": ":xliff:This parameter defines if the list box should be sortable or not by clicking on the headers.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -2856,28 +2936,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Numeric format (LB)",
 					"focusable": false,
 					"method": "ObjectMethods/Button31.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button32": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:3 state checkbox (LB)",
 					"focusable": false,
 					"method": "ObjectMethods/Button32.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text11": {
 					"type": "text",
@@ -2888,7 +2968,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text12": {
 					"type": "text",
@@ -2899,7 +2980,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"LB12": {
 					"type": "listbox",
@@ -2962,7 +3044,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB12_Col2",
@@ -2994,7 +3077,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB12_Col3",
@@ -3033,51 +3117,54 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Button48": {
 					"type": "button",
 					"top": 299,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Numeric format (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button48.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button49": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:3 state checkbox (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button49.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button50": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Display (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button50.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable14": {
 					"type": "input",
@@ -3101,14 +3188,14 @@
 					"top": 450,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Display (Col2)",
 					"focusable": false,
 					"method": "ObjectMethods/Button51.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text61": {
 					"type": "text",
@@ -3116,7 +3203,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter defines how the numeric columns should be displayed."
+					"text": ":xliff:This parameter defines how the numeric columns should be displayed.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -3127,42 +3215,42 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Random",
 					"focusable": false,
 					"method": "ObjectMethods/Button33.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button34": {
 					"type": "button",
 					"top": 239,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Method",
 					"focusable": false,
 					"method": "ObjectMethods/Button34.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button35": {
 					"type": "button",
 					"top": 269,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": "0xFFA080",
 					"focusable": false,
 					"method": "ObjectMethods/Button35.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text13": {
 					"type": "text",
@@ -3173,7 +3261,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text14": {
 					"type": "text",
@@ -3184,21 +3273,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button52": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Get expression",
 					"focusable": false,
 					"method": "ObjectMethods/Button52.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable15": {
 					"type": "input",
@@ -3271,7 +3361,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col20",
@@ -3303,7 +3394,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col21",
@@ -3335,9 +3427,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text62": {
 					"type": "text",
@@ -3345,7 +3440,8 @@
 					"left": 240,
 					"width": 680,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to set the expression for the background color."
+					"text": ":xliff:This parameter allows you to set the expression for the background color.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -3356,42 +3452,42 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Random",
 					"focusable": false,
 					"method": "ObjectMethods/Button36.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button53": {
 					"type": "button",
 					"top": 239,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Method",
 					"focusable": false,
 					"method": "ObjectMethods/Button53.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button54": {
 					"type": "button",
 					"top": 269,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": "0xFFA0A0",
 					"focusable": false,
 					"method": "ObjectMethods/Button54.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text15": {
 					"type": "text",
@@ -3402,7 +3498,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text16": {
 					"type": "text",
@@ -3413,21 +3510,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button55": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Get expression",
 					"focusable": false,
 					"method": "ObjectMethods/Button55.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable16": {
 					"type": "input",
@@ -3500,7 +3598,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col23",
@@ -3532,7 +3631,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col24",
@@ -3564,9 +3664,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text63": {
 					"type": "text",
@@ -3574,7 +3677,8 @@
 					"left": 240,
 					"width": 680,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to set the expression for the font color."
+					"text": ":xliff:This parameter allows you to set the expression for the font color.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -3585,42 +3689,42 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Random",
 					"focusable": false,
 					"method": "ObjectMethods/Button37.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button56": {
 					"type": "button",
 					"top": 239,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Method",
 					"focusable": false,
 					"method": "ObjectMethods/Button56.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button57": {
 					"type": "button",
 					"top": 269,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Plain | Underline",
 					"focusable": false,
 					"method": "ObjectMethods/Button57.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text17": {
 					"type": "text",
@@ -3631,7 +3735,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text18": {
 					"type": "text",
@@ -3642,21 +3747,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button58": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Get expression",
 					"focusable": false,
 					"method": "ObjectMethods/Button58.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable17": {
 					"type": "input",
@@ -3729,7 +3835,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col26",
@@ -3761,7 +3868,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P6_Col27",
@@ -3793,9 +3901,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text64": {
 					"type": "text",
@@ -3803,7 +3914,8 @@
 					"left": 240,
 					"width": 675,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to set the expression for the font style."
+					"text": ":xliff:This parameter allows you to set the expression for the font style.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -3814,28 +3926,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Min Width 50 (LB)",
 					"focusable": false,
 					"method": "ObjectMethods/Button59.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button60": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Min Width 100 (LB)",
 					"focusable": false,
 					"method": "ObjectMethods/Button60.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text19": {
 					"type": "text",
@@ -3846,7 +3958,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text20": {
 					"type": "text",
@@ -3857,21 +3970,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button63": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Min Width (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button63.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable18": {
 					"type": "input",
@@ -3895,14 +4009,14 @@
 					"top": 450,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Min Width (Col2)",
 					"focusable": false,
 					"method": "ObjectMethods/Button64.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB16": {
 					"type": "listbox",
@@ -3958,7 +4072,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P16_Col2",
@@ -3990,7 +4105,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P16_Col3",
@@ -4022,37 +4138,40 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Button61": {
 					"type": "button",
 					"top": 299,
 					"left": 739,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Min Width 50 (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button61.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button62": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Min Width 100 (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button62.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text65": {
 					"type": "text",
@@ -4060,7 +4179,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameters allows you to set the minimum width of columns."
+					"text": ":xliff:This parameters allows you to set the minimum width of columns.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -4071,28 +4191,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Max Width 200 (LB)",
 					"focusable": false,
 					"method": "ObjectMethods/Button65.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button66": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Max Width 300 (LB)",
 					"focusable": false,
 					"method": "ObjectMethods/Button66.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text21": {
 					"type": "text",
@@ -4103,7 +4223,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text22": {
 					"type": "text",
@@ -4114,21 +4235,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button67": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Max Width (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button67.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable19": {
 					"type": "input",
@@ -4152,14 +4274,14 @@
 					"top": 450,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Max Width (Col2)",
 					"focusable": false,
 					"method": "ObjectMethods/Button68.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB17": {
 					"type": "listbox",
@@ -4215,7 +4337,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P17_Col2",
@@ -4247,7 +4370,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "P17_Col3",
@@ -4279,37 +4403,40 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Button69": {
 					"type": "button",
 					"top": 299,
 					"left": 739,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Max Width 200 (col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button69.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button70": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col Max Width 300 (Col1)",
 					"focusable": false,
 					"method": "ObjectMethods/Button70.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text66": {
 					"type": "text",
@@ -4317,7 +4444,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to set the maximum width of columns."
+					"text": ":xliff:This parameter allows you to set the maximum width of columns.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -4328,28 +4456,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Highlight set : $SetA",
 					"focusable": false,
 					"method": "ObjectMethods/Button71.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button72": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Highlight set : $SetB",
 					"focusable": false,
 					"method": "ObjectMethods/Button72.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text23": {
 					"type": "text",
@@ -4360,7 +4488,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text24": {
 					"type": "text",
@@ -4371,21 +4500,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button73": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Get Set",
 					"focusable": false,
 					"method": "ObjectMethods/Button73.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable20": {
 					"type": "input",
@@ -4457,7 +4587,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c2",
@@ -4489,7 +4620,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c3",
@@ -4521,9 +4653,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text67": {
 					"type": "text",
@@ -4531,7 +4666,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to define the name of the highlight"
+					"text": ":xliff:This parameter allows you to define the name of the highlight",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -4542,28 +4678,28 @@
 					"top": 209,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Selection name \"SelA\"",
 					"focusable": false,
 					"method": "ObjectMethods/Button74.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button75": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Selection name \"SelB\"",
 					"focusable": false,
 					"method": "ObjectMethods/Button75.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text37": {
 					"type": "text",
@@ -4574,7 +4710,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text38": {
 					"type": "text",
@@ -4585,21 +4722,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button76": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Get Selection name",
 					"focusable": false,
 					"method": "ObjectMethods/Button76.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable21": {
 					"type": "input",
@@ -4671,7 +4809,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c5",
@@ -4703,7 +4842,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c6",
@@ -4735,9 +4875,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text68": {
 					"type": "text",
@@ -4745,7 +4888,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": "This parameter allows you to define the name of the selection set used in \"named selection\" type list boxes."
+					"text": ":xliff:This parameter allows you to define the name of the selection set used in \"named selection\" type list boxes.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -4756,28 +4900,28 @@
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Single-Click Edit : No",
 					"focusable": false,
 					"method": "ObjectMethods/Button88.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button89": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Single-Click Edit : Yes",
 					"focusable": false,
 					"method": "ObjectMethods/Button89.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"LB22": {
 					"type": "listbox",
@@ -4839,7 +4983,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB22_Col2",
@@ -4870,7 +5015,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB22_Col3",
@@ -4901,9 +5047,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text73": {
 					"type": "text",
@@ -4914,21 +5063,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button90": {
 					"type": "button",
 					"top": 330,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Single-Click Edit",
 					"focusable": false,
 					"method": "ObjectMethods/Button90.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable24": {
 					"type": "input",
@@ -4953,7 +5103,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to define all enterable columns as editable with a single click or not."
+					"text": ":xliff:This parameter allows you to define all enterable columns as editable with a single click or not.",
+					"stroke": "automatic"
 				},
 				"Text78": {
 					"type": "text",
@@ -4964,7 +5115,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -4975,28 +5127,28 @@
 					"top": 239,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:LB Multi-style : Yes",
 					"focusable": false,
 					"method": "ObjectMethods/Button93.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button94": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:LB Multi-style : No",
 					"focusable": false,
 					"method": "ObjectMethods/Button94.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text75": {
 					"type": "text",
@@ -5007,7 +5159,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text76": {
 					"type": "text",
@@ -5018,21 +5171,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button95": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1 Multi-style",
 					"focusable": false,
 					"method": "ObjectMethods/Button95.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable25": {
 					"type": "input",
@@ -5106,7 +5260,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "LB23_Col2",
@@ -5137,9 +5292,12 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text77": {
 					"type": "text",
@@ -5147,49 +5305,50 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter lets you permit or forbid multi-style text in columns."
+					"text": ":xliff:This parameter lets you permit or forbid multi-style text in columns.",
+					"stroke": "automatic"
 				},
 				"Button96": {
 					"type": "button",
 					"top": 299,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1 Multi-style : Yes",
 					"focusable": false,
 					"method": "ObjectMethods/Button96.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button99": {
 					"type": "button",
 					"top": 270,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col1 Multi-style : No",
 					"focusable": false,
 					"method": "ObjectMethods/Button99.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button100": {
 					"type": "button",
 					"top": 450,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Col2 Multi-style",
 					"focusable": false,
 					"method": "ObjectMethods/Button100.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				}
 			}
 		},
@@ -5204,21 +5363,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button77": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Display footer",
 					"focusable": false,
 					"method": "ObjectMethods/Button77.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable22": {
 					"type": "input",
@@ -5290,7 +5450,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c8",
@@ -5322,7 +5483,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c9",
@@ -5354,9 +5516,12 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text41": {
 					"type": "text",
@@ -5367,35 +5532,36 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Button79": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Hide footer",
 					"focusable": false,
 					"method": "ObjectMethods/Button79.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button80": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Show footer",
 					"focusable": false,
 					"method": "ObjectMethods/Button80.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text69": {
 					"type": "text",
@@ -5403,7 +5569,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to hide or show the footers of a list box."
+					"text": ":xliff:This parameter allows you to hide or show the footers of a list box.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -5462,7 +5629,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c11",
@@ -5494,7 +5662,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c12",
@@ -5526,9 +5695,12 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text40": {
 					"type": "text",
@@ -5539,21 +5711,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button78": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Display header",
 					"focusable": false,
 					"method": "ObjectMethods/Button78.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable23": {
 					"type": "input",
@@ -5581,35 +5754,36 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Button81": {
 					"type": "button",
 					"top": 210,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Hide header",
 					"focusable": false,
 					"method": "ObjectMethods/Button81.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button82": {
 					"type": "button",
 					"top": 240,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Show header",
 					"focusable": false,
 					"method": "ObjectMethods/Button82.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text70": {
 					"type": "text",
@@ -5617,7 +5791,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to hide or show the headers of a list box."
+					"text": ":xliff:This parameter allows you to hide or show the headers of a list box.",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -5632,21 +5807,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button97": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Hor scrollbar height",
 					"focusable": false,
 					"method": "ObjectMethods/Button97.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable30": {
 					"type": "input",
@@ -5717,7 +5893,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c32",
@@ -5749,7 +5926,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c33",
@@ -5781,9 +5959,12 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text57": {
 					"type": "text",
@@ -5795,7 +5976,7 @@
 					"stroke": "#FF6347",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "N/A"
+					"text": ":xliff:N/A"
 				},
 				"Text44": {
 					"type": "text",
@@ -5806,7 +5987,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text71": {
 					"type": "text",
@@ -5814,7 +5996,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to get (not set!) the height of the horizontal scrollbar (OS dependent)."
+					"text": ":xliff:This parameter allows you to get (not set!) the height of the horizontal scrollbar (OS dependent).",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -5829,21 +6012,22 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "GET"
+					"text": ":xliff:GET",
+					"stroke": "automatic"
 				},
 				"Button98": {
 					"type": "button",
 					"top": 420,
 					"left": 740,
 					"width": 180,
-					"height": 20,
 					"sizingX": "move",
 					"text": ":xliff:Ver scrollbar width",
 					"focusable": false,
 					"method": "ObjectMethods/Button98.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable31": {
 					"type": "input",
@@ -5914,7 +6098,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c35",
@@ -5946,7 +6131,8 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "c36",
@@ -5978,9 +6164,12 @@
 								"fill": "#B1C4DD",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text45": {
 					"type": "text",
@@ -5992,7 +6181,7 @@
 					"stroke": "#FF6347",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "N/A"
+					"text": ":xliff:N/A"
 				},
 				"Text46": {
 					"type": "text",
@@ -6003,7 +6192,8 @@
 					"sizingX": "move",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "SET"
+					"text": ":xliff:SET",
+					"stroke": "automatic"
 				},
 				"Text72": {
 					"type": "text",
@@ -6011,7 +6201,8 @@
 					"left": 240,
 					"width": 600,
 					"height": 113,
-					"text": ":xliff:This parameter allows you to get (not set!) the width of the vertical scrollbar (OS dependent)."
+					"text": ":xliff:This parameter allows you to get (not set!) the width of the vertical scrollbar (OS dependent).",
+					"stroke": "automatic"
 				}
 			}
 		}
