@@ -64,8 +64,6 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "middle",
 							"events": [
@@ -74,7 +72,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "Properties",
+								"text": ":xliff:Properties",
 								"dataSource": "Header2",
 								"stroke": "automatic",
 								"textAlign": "automatic",
@@ -342,6 +340,46 @@
 					"stroke": "#9400D3",
 					"strokeDashArray": "1 1",
 					"borderRadius": 5
+				},
+				"refLBPageText": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"visibility": "hidden",
+					"class": "hdi-lbpage-text",
+					"stroke": "transparent"
+				},
+				"refLBPageSelectedText": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"visibility": "hidden",
+					"class": "hdi-lbpage-selected-text",
+					"stroke": "transparent"
+				},
+				"refLBPageSelectedFill": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"visibility": "hidden",
+					"class": "hdi-lbpage-selected-fill",
+					"stroke": "transparent"
+				},
+				"refLBPageFill": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"visibility": "hidden",
+					"class": "hdi-lbpage-fill",
+					"stroke": "transparent"
 				}
 			}
 		},

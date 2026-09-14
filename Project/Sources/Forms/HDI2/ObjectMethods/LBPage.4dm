@@ -7,14 +7,15 @@ Case of
 		
 		ARRAY LONGINT:C221(_FontBackground; 0)
 		ARRAY LONGINT:C221(_FontBackground; $n)
-		For ($i; 1; $n)
-			_FontBackground{$i}:=0x00FFFFFF
-		End for 
 		ARRAY LONGINT:C221(_FontColor; 0)
 		ARRAY LONGINT:C221(_FontColor; $n)
+		For ($i; 1; $n)
+			_FontColor{$i}:=vLBPageTextColor
+			_FontBackground{$i}:=vLBPageFillColor
+		End for 
 		
 		_fontStyle{_Pages}:=Bold:K14:2
-		_FontColor{_Pages}:=0x00CDE2FF
-		_FontBackground{_Pages}:=0x008F9EB2
+		_FontColor{_Pages}:=vLBPageSelectedTextColor
+		_FontBackground{_Pages}:=vLBPageSelectedFillColor
 		
 End case 

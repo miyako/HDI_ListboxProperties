@@ -21,3 +21,50 @@
 		alternateFill: #2B3A4D;
 	}
 }
+
+/* Hidden reference rectangles used by LBPage's rowStrokeSource/rowFillSource
+   meta expressions (Project/Sources/Forms/HDI2/method.4dm, ObjectMethods/LBPage.4dm)
+   to resolve theme-appropriate colors at runtime via OBJECT GET RGB COLORS. */
+@media (prefers-color-scheme: light) {
+	.hdi-lbpage-text {
+		fill: #000000;
+		visibility: hidden;
+	}
+
+	.hdi-lbpage-selected-text {
+		fill: #CDE2FF;
+		visibility: hidden;
+	}
+
+	.hdi-lbpage-selected-fill {
+		fill: #8F9EB2;
+		visibility: hidden;
+	}
+
+	.hdi-lbpage-fill {
+		fill: #FFFFFF;
+		visibility: hidden;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-lbpage-text {
+		fill: #E0E0E0;
+		visibility: hidden;
+	}
+
+	.hdi-lbpage-selected-text {
+		fill: #CDE2FF;
+		visibility: hidden;
+	}
+
+	.hdi-lbpage-selected-fill {
+		fill: #3A4A5C;
+		visibility: hidden;
+	}
+
+	.hdi-lbpage-fill {
+		fill: #2A2A2A;
+		visibility: hidden;
+	}
+}

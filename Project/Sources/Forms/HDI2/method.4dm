@@ -1,7 +1,21 @@
 var vResult : Text
+var vLBPageTextColor; vLBPageSelectedTextColor; vLBPageSelectedFillColor; vLBPageFillColor : Integer
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
+		
+		// resolve theme-appropriate colors for the LBPage meta expressions
+		// (see refLBPageText/refLBPageSelectedText/refLBPageSelectedFill/refLBPageFill
+		// hidden rectangles + styleSheets.css)
+		var $fg; $bg : Integer
+		OBJECT GET RGB COLORS(*; "refLBPageText"; $fg; $bg)
+		vLBPageTextColor:=$bg
+		OBJECT GET RGB COLORS(*; "refLBPageSelectedText"; $fg; $bg)
+		vLBPageSelectedTextColor:=$bg
+		OBJECT GET RGB COLORS(*; "refLBPageSelectedFill"; $fg; $bg)
+		vLBPageSelectedFillColor:=$bg
+		OBJECT GET RGB COLORS(*; "refLBPageFill"; $fg; $bg)
+		vLBPageFillColor:=$bg
 		
 		If (Get menu bar reference:C979="")
 			SET MENU BAR:C67(1)
@@ -114,12 +128,13 @@ Case of
 		ARRAY LONGINT:C221(_FontBackground; $n)
 		
 		For ($i; 1; $n)
-			_FontBackground{$i}:=0x00FFFFFF
+			_FontColor{$i}:=vLBPageTextColor
+			_FontBackground{$i}:=vLBPageFillColor
 		End for 
 		
 		_Pages:=1
-		_FontColor{_Pages}:=0x00CDE2FF
-		_FontBackground{_Pages}:=0x008F9EB2
+		_FontColor{_Pages}:=vLBPageSelectedTextColor
+		_FontBackground{_Pages}:=vLBPageSelectedFillColor
 		_FontStyle{_Pages}:=Bold:K14:2
 		
 		LBPage{_Pages}:=True:C214
