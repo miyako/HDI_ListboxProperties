@@ -1,0 +1,19 @@
+{
+	"tables": {
+		"TEST": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "18.72265625",
+				"top": "0",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		}
+	}
+}

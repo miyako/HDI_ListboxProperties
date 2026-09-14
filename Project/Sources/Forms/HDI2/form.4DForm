@@ -1,0 +1,6019 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 940,
+	"windowMinHeight": 470,
+	"width": 940,
+	"height": 600,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"LBPage": {
+					"type": "listbox",
+					"top": 20,
+					"left": 0,
+					"width": 220,
+					"height": 580,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "20px",
+					"action": "gotoPage",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"rowStrokeSource": "_FontColor",
+					"rowFillSource": "_FontBackground",
+					"rowStyleSource": "_FontStyle",
+					"verticalAlign": "middle",
+					"borderStyle": "none",
+					"method": "ObjectMethods/LBPage.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column2",
+							"dataSource": "_Pages",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Properties",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "middle"
+							}
+						}
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 10,
+					"left": 220,
+					"width": 760,
+					"height": 22,
+					"sizingX": "grow",
+					"dataSource": "\"lk \"+Lowercase:C14(__Pages{_Pages})",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": -11,
+					"left": 220,
+					"height": 631,
+					"sizingY": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 580,
+					"left": 220,
+					"width": 720,
+					"height": 17,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vPageNumber",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "- #0 -",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 180,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle2": {
+					"type": "rectangle",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle3": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle4": {
+					"type": "rectangle",
+					"top": 300,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle5": {
+					"type": "rectangle",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle6": {
+					"type": "rectangle",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle7": {
+					"type": "rectangle",
+					"top": 390,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle8": {
+					"type": "rectangle",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle9": {
+					"type": "rectangle",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle10": {
+					"type": "rectangle",
+					"top": 480,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle11": {
+					"type": "rectangle",
+					"top": 510,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Round Rectangle14": {
+					"type": "rectangle",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "#800080",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 220,
+					"height": 20,
+					"fill": "#B8CBE5",
+					"textAlign": "center",
+					"fontTheme": "main",
+					"text": ":xliff:Properties"
+				},
+				"Round Rectangle12": {
+					"type": "rectangle",
+					"top": 540,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB1": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB1",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "Col1",
+							"width": 465,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:None",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Single",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 270,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Multiple",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 329,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 390,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button38": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Selection mode",
+					"focusable": false,
+					"method": "ObjectMethods/Button38.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text47": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 680,
+					"height": 113,
+					"text": ":xliff:This parameter defines the number of rows that can be selected by the user."
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB2": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "LB2",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "LB2_Col1",
+							"dataSource": "Col1",
+							"width": 150,
+							"minWidth": 120,
+							"maxWidth": 250,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB2_Col2",
+							"dataSource": "Col2",
+							"width": 150,
+							"minWidth": 120,
+							"maxWidth": 250,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB2_Col3",
+							"dataSource": "Col3",
+							"width": 150,
+							"minWidth": 120,
+							"maxWidth": 250,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Manual",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Automatic",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text27": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 329,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 390,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button39": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Column resizing mode",
+					"focusable": false,
+					"method": "ObjectMethods/Button39.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text48": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines the way columns should be resized."
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB3": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 379,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB3",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "LB3_Col1",
+							"dataSource": "Col1",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 400,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header52",
+								"text": "H1",
+								"dataSource": "h1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer52",
+								"truncateMode": "none",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB3_Col2",
+							"dataSource": "Col1",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 400,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "H2",
+								"dataSource": "h1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"truncateMode": "none",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB3_Col3",
+							"dataSource": "Col2",
+							"width": 327,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header24",
+								"text": "H3",
+								"dataSource": "Header24",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer24",
+								"truncateMode": "none",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 182,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:All columns without \"…\"",
+					"focusable": false,
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 182,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:All columns with \"…\"",
+					"focusable": false,
+					"method": "ObjectMethods/Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 329,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 420,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button40": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Truncate mode Col1",
+					"focusable": false,
+					"method": "ObjectMethods/Button40.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button83": {
+					"type": "button",
+					"top": 390,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Truncate mode Col2",
+					"focusable": false,
+					"method": "ObjectMethods/Button83.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button84": {
+					"type": "button",
+					"top": 270,
+					"left": 740,
+					"width": 182,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1 without \"…\"",
+					"focusable": false,
+					"method": "ObjectMethods/Button84.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button85": {
+					"type": "button",
+					"top": 300,
+					"left": 740,
+					"width": 182,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1 with \"…\"",
+					"focusable": false,
+					"method": "ObjectMethods/Button85.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text49": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines the way contents of cells should be truncated."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button5": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Hide",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Display",
+					"focusable": false,
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text31": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 329,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 390,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button41": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Extra rows",
+					"focusable": false,
+					"method": "ObjectMethods/Button41.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB4": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "namedSelection",
+					"dataSource": "LB4",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"selectionName": "SelA",
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFACD",
+					"alternateFill": "#B1C4DD",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c13",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "#FFFACD",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "#FFFACD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c14",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "#FFFACD",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header55",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer58",
+								"stroke": "automatic",
+								"fill": "#FFFACD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c15",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "#FFFACD",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header58",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer59",
+								"stroke": "automatic",
+								"fill": "#FFFACD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text50": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to set up the way the extra rows should be drawn"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button9": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Do not allow LB",
+					"focusable": false,
+					"method": "ObjectMethods/Button9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Allow LB",
+					"focusable": false,
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB5": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB5",
+					"hideFocusRing": true,
+					"rowHeight": "40px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "LB5_Col1",
+							"dataSource": "Col1",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 400,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"wordwrap": "normal",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "h1",
+								"dataSource": "h1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB5_Col2",
+							"dataSource": "Col1",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 400,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"wordwrap": "normal",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header59",
+								"text": "h1",
+								"dataSource": "h1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer60",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P5_Col2",
+							"dataSource": "Col2",
+							"width": 310,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header25",
+								"text": "Header25",
+								"dataSource": "Header25",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer25",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text33": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 329,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 420,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button42": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Word wrap Col1",
+					"focusable": false,
+					"method": "ObjectMethods/Button42.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button16": {
+					"type": "button",
+					"top": 269,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Do not allow Col1",
+					"focusable": false,
+					"method": "ObjectMethods/Button16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button43": {
+					"type": "button",
+					"top": 300,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Allow Col1",
+					"focusable": false,
+					"method": "ObjectMethods/Button43.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button44": {
+					"type": "button",
+					"top": 390,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Word wrap Col2",
+					"focusable": false,
+					"method": "ObjectMethods/Button44.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text51": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines if the cells allow wordwrap or not."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button11": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1: no",
+					"focusable": false,
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button12": {
+					"type": "button",
+					"top": 270,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1: yes",
+					"focusable": false,
+					"method": "ObjectMethods/Button12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button17": {
+					"type": "button",
+					"top": 180,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:All Col.: No",
+					"focusable": false,
+					"method": "ObjectMethods/Button17.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button18": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:All Col.: Yes",
+					"focusable": false,
+					"method": "ObjectMethods/Button18.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB6": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB6",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col1",
+							"dataSource": "Col1",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 200,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col2",
+							"dataSource": "Col2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col3",
+							"dataSource": "Col3",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text35": {
+					"type": "text",
+					"top": 149,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button13": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": "Col1",
+					"focusable": false,
+					"method": "ObjectMethods/Button13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button14": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": "Col2",
+					"focusable": false,
+					"method": "ObjectMethods/Button14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button15": {
+					"type": "button",
+					"top": 390,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": "Col3",
+					"focusable": false,
+					"method": "ObjectMethods/Button15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 420,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text52": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines if the columns can be resized or not."
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB7": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB7",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col4",
+							"dataSource": "Col1",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col5",
+							"dataSource": "Col2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col6",
+							"dataSource": "Col3",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button22": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Hide",
+					"focusable": false,
+					"method": "ObjectMethods/Button22.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button23": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Show",
+					"focusable": false,
+					"method": "ObjectMethods/Button23.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 329,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 390,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button45": {
+					"type": "button",
+					"top": 360,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Highlight hidden",
+					"focusable": false,
+					"method": "ObjectMethods/Button45.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text55": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines if the system highlight should be displayed or not."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button19": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:2 Lines",
+					"focusable": false,
+					"method": "ObjectMethods/Button19.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button20": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:60 Pixels",
+					"focusable": false,
+					"method": "ObjectMethods/Button20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button21": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Row height unit",
+					"focusable": false,
+					"method": "ObjectMethods/Button21.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB8": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB1",
+					"hideFocusRing": true,
+					"rowHeightSource": "_Height",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col7",
+							"dataSource": "Col1",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col8",
+							"dataSource": "Col2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col9",
+							"dataSource": "Col3",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer17",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 360,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text56": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines the unit to be used for the row height."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button24": {
+					"type": "button",
+					"top": 180,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Do nothing",
+					"focusable": false,
+					"method": "ObjectMethods/Button24.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button25": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Edit record",
+					"focusable": false,
+					"method": "ObjectMethods/Button25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button26": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Display record",
+					"focusable": false,
+					"method": "ObjectMethods/Button26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB9": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB9",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col10",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer18",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col11",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer19",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col12",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header20",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer20",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 149,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 269,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button46": {
+					"type": "button",
+					"top": 300,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Get action",
+					"focusable": false,
+					"method": "ObjectMethods/Button46.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 330,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text58": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameters defines what should happen when a row is double-clicked by the user."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button27": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Detail form name",
+					"focusable": false,
+					"method": "ObjectMethods/Button27.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button28": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Detail form name",
+					"focusable": false,
+					"method": "ObjectMethods/Button28.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 361,
+					"left": 740,
+					"width": 180,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "vFormNameGet",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 241,
+					"left": 740,
+					"width": 180,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "vFormNameSet",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB10": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB10",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col13",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header21",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer21",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col14",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header22",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer22",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col15",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header23",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer23",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 262,
+					"left": 740,
+					"width": 180,
+					"height": 14,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": "(Input_A / Input_B)"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines the name of the detail form to be used to edit or display records when the user double clicks on a row."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button29": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Do not allow sort",
+					"focusable": false,
+					"method": "ObjectMethods/Button29.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button30": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Allow sort",
+					"focusable": false,
+					"method": "ObjectMethods/Button30.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB11": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB11",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col16",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header26",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer26",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col17",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header27",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer27",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col18",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header28",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer28",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button47": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Sort allowed",
+					"focusable": false,
+					"method": "ObjectMethods/Button47.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 360,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text60": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines if the list box should be sortable or not by clicking on the headers."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button31": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Numeric format (LB)",
+					"focusable": false,
+					"method": "ObjectMethods/Button31.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button32": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:3 state checkbox (LB)",
+					"focusable": false,
+					"method": "ObjectMethods/Button32.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"LB12": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 479,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB12",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "LB12_Col1",
+							"dataSource": "Col4",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header29",
+								"text": "H1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer29",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB12_Col2",
+							"dataSource": "Col5",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header30",
+								"text": "H2",
+								"dataSource": "Header30",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer30",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB12_Col3",
+							"dataSource": "Col1",
+							"width": 164,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header66",
+								"text": "H3",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer67",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button48": {
+					"type": "button",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Numeric format (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button48.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button49": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:3 state checkbox (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button49.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button50": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Display (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button50.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 480,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button51": {
+					"type": "button",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Display (Col2)",
+					"focusable": false,
+					"method": "ObjectMethods/Button51.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text61": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter defines how the numeric columns should be displayed."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button33": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Random",
+					"focusable": false,
+					"method": "ObjectMethods/Button33.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button34": {
+					"type": "button",
+					"top": 239,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Method",
+					"focusable": false,
+					"method": "ObjectMethods/Button34.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button35": {
+					"type": "button",
+					"top": 269,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": "0xFFA080",
+					"focusable": false,
+					"method": "ObjectMethods/Button35.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button52": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Get expression",
+					"focusable": false,
+					"method": "ObjectMethods/Button52.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 80,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB13": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB13",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col19",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header31",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer31",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col20",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header32",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer32",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col21",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header33",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer33",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text62": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 680,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to set the expression for the background color."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button36": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Random",
+					"focusable": false,
+					"method": "ObjectMethods/Button36.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button53": {
+					"type": "button",
+					"top": 239,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Method",
+					"focusable": false,
+					"method": "ObjectMethods/Button53.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button54": {
+					"type": "button",
+					"top": 269,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": "0xFFA0A0",
+					"focusable": false,
+					"method": "ObjectMethods/Button54.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button55": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Get expression",
+					"focusable": false,
+					"method": "ObjectMethods/Button55.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 80,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB14": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB14",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col22",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header34",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer34",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col23",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header35",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer35",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col24",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header36",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer36",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text63": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 680,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to set the expression for the font color."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button37": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Random",
+					"focusable": false,
+					"method": "ObjectMethods/Button37.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button56": {
+					"type": "button",
+					"top": 239,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Method",
+					"focusable": false,
+					"method": "ObjectMethods/Button56.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button57": {
+					"type": "button",
+					"top": 269,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Plain | Underline",
+					"focusable": false,
+					"method": "ObjectMethods/Button57.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button58": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Get expression",
+					"focusable": false,
+					"method": "ObjectMethods/Button58.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 80,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB15": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB15",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P6_Col25",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header37",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer37",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col26",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header38",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer38",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P6_Col27",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header39",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer39",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text64": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 675,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to set the expression for the font style."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button59": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Min Width 50 (LB)",
+					"focusable": false,
+					"method": "ObjectMethods/Button59.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button60": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Min Width 100 (LB)",
+					"focusable": false,
+					"method": "ObjectMethods/Button60.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button63": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Min Width (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button63.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 480,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button64": {
+					"type": "button",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Min Width (Col2)",
+					"focusable": false,
+					"method": "ObjectMethods/Button64.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB16": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB16",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P16_Col1",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header40",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer40",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P16_Col2",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header41",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer41",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P16_Col3",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header42",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer42",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button61": {
+					"type": "button",
+					"top": 299,
+					"left": 739,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Min Width 50 (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button61.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button62": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Min Width 100 (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button62.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text65": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameters allows you to set the minimum width of columns."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button65": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Max Width 200 (LB)",
+					"focusable": false,
+					"method": "ObjectMethods/Button65.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button66": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Max Width 300 (LB)",
+					"focusable": false,
+					"method": "ObjectMethods/Button66.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button67": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Max Width (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button67.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 480,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button68": {
+					"type": "button",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Max Width (Col2)",
+					"focusable": false,
+					"method": "ObjectMethods/Button68.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB17": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB17",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"table": 1,
+					"highlightSet": "$set1",
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "P17_Col1",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header43",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer43",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P17_Col2",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header44",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer44",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "P17_Col3",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header45",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer45",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button69": {
+					"type": "button",
+					"top": 299,
+					"left": 739,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Max Width 200 (col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button69.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button70": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col Max Width 300 (Col1)",
+					"focusable": false,
+					"method": "ObjectMethods/Button70.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text66": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to set the maximum width of columns."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button71": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Highlight set : $SetA",
+					"focusable": false,
+					"method": "ObjectMethods/Button71.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button72": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Highlight set : $SetB",
+					"focusable": false,
+					"method": "ObjectMethods/Button72.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button73": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Get Set",
+					"focusable": false,
+					"method": "ObjectMethods/Button73.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 450,
+					"left": 742,
+					"width": 178,
+					"height": 80,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB18": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB18",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c1",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header46",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer46",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c2",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header47",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer47",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c3",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header48",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer48",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text67": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to define the name of the highlight"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button74": {
+					"type": "button",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Selection name \"SelA\"",
+					"focusable": false,
+					"method": "ObjectMethods/Button74.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button75": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Selection name \"SelB\"",
+					"focusable": false,
+					"method": "ObjectMethods/Button75.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text37": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button76": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Get Selection name",
+					"focusable": false,
+					"method": "ObjectMethods/Button76.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 450,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB19": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "namedSelection",
+					"dataSource": "LB19",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"selectionName": "SelB",
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c4",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header49",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer49",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c5",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header50",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer50",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c6",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header51",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer51",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text68": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": "This parameter allows you to define the name of the selection set used in \"named selection\" type list boxes."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button88": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Single-Click Edit : No",
+					"focusable": false,
+					"method": "ObjectMethods/Button88.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button89": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Single-Click Edit : Yes",
+					"focusable": false,
+					"method": "ObjectMethods/Button89.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB22": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LB22",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "LB22_Col1",
+							"dataSource": "Col1",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 200,
+							"values": [
+								"a",
+								"b",
+								"c",
+								"d",
+								"e",
+								"f"
+							],
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header60",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer61",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB22_Col2",
+							"dataSource": "Col1",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header61",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer62",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB22_Col3",
+							"dataSource": "Col3",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header62",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer63",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text73": {
+					"type": "text",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button90": {
+					"type": "button",
+					"top": 330,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Single-Click Edit",
+					"focusable": false,
+					"method": "ObjectMethods/Button90.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 420,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text74": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to define all enterable columns as editable with a single click or not."
+				},
+				"Text78": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button93": {
+					"type": "button",
+					"top": 239,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:LB Multi-style : Yes",
+					"focusable": false,
+					"method": "ObjectMethods/Button93.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button94": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:LB Multi-style : No",
+					"focusable": false,
+					"method": "ObjectMethods/Button94.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text75": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text76": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button95": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1 Multi-style",
+					"focusable": false,
+					"method": "ObjectMethods/Button95.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 480,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB23": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB23",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "LB23_Col1",
+							"dataSource": "[TEST:1]Comments:5",
+							"width": 220,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header63",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer64",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LB23_Col2",
+							"dataSource": "[TEST:1]Comments:5",
+							"width": 245,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header64",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer65",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text77": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter lets you permit or forbid multi-style text in columns."
+				},
+				"Button96": {
+					"type": "button",
+					"top": 299,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1 Multi-style : Yes",
+					"focusable": false,
+					"method": "ObjectMethods/Button96.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button99": {
+					"type": "button",
+					"top": 270,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col1 Multi-style : No",
+					"focusable": false,
+					"method": "ObjectMethods/Button99.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button100": {
+					"type": "button",
+					"top": 450,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Col2 Multi-style",
+					"focusable": false,
+					"method": "ObjectMethods/Button100.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text39": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button77": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Display footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button77.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 450,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB20": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB20",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"showFooters": true,
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c7",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "P20_H1",
+								"text": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "P20_F1",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c8",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header53",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer53",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c9",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header54",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer54",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text41": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Button79": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Hide footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button79.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button80": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Show footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button80.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text69": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to hide or show the footers of a list box."
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB21": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB21",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"table": 1,
+					"detailForm": "Input_A",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c10",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "P21_H1",
+								"text": "Header1",
+								"dataSource": "H1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer55",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c11",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header56",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer56",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c12",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header57",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer57",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text40": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button78": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Display header",
+					"focusable": false,
+					"method": "ObjectMethods/Button78.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 450,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text42": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Button81": {
+					"type": "button",
+					"top": 210,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Hide header",
+					"focusable": false,
+					"method": "ObjectMethods/Button81.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button82": {
+					"type": "button",
+					"top": 240,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Show header",
+					"focusable": false,
+					"method": "ObjectMethods/Button82.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text70": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to hide or show the headers of a list box."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text53": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button97": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Hor scrollbar height",
+					"focusable": false,
+					"method": "ObjectMethods/Button97.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 450,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB28": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB28",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"table": 1,
+					"detailForm": "Input_A",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c31",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "P25_H4",
+								"text": "Header1",
+								"dataSource": "H1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "P24_F5",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c32",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header68",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer71",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c33",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 50,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header69",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer72",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text57": {
+					"type": "text",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"stroke": "#FF6347",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "N/A"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text71": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to get (not set!) the height of the horizontal scrollbar (OS dependent)."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text54": {
+					"type": "text",
+					"top": 389,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "GET"
+				},
+				"Button98": {
+					"type": "button",
+					"top": 420,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"text": ":xliff:Ver scrollbar width",
+					"focusable": false,
+					"method": "ObjectMethods/Button98.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 450,
+					"left": 742,
+					"width": 178,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "vResult",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB29": {
+					"type": "listbox",
+					"top": 180,
+					"left": 240,
+					"width": 480,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "LB29",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "20px",
+					"table": 1,
+					"detailForm": "Input_A",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "c34",
+							"dataSource": "[TEST:1]Name:2",
+							"width": 150,
+							"minWidth": 100,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "P25_H5",
+								"text": "Header1",
+								"dataSource": "H1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "P24_F6",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c35",
+							"dataSource": "[TEST:1]Value:3",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 100,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header70",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer73",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "c36",
+							"dataSource": "[TEST:1]Birthday:4",
+							"dataSourceTypeHint": "date",
+							"width": 165,
+							"minWidth": 100,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header71",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer74",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text45": {
+					"type": "text",
+					"top": 209,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"stroke": "#FF6347",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "N/A"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 179,
+					"left": 740,
+					"width": 180,
+					"height": 20,
+					"sizingX": "move",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "SET"
+				},
+				"Text72": {
+					"type": "text",
+					"top": 60,
+					"left": 240,
+					"width": 600,
+					"height": 113,
+					"text": ":xliff:This parameter allows you to get (not set!) the width of the vertical scrollbar (OS dependent)."
+				}
+			}
+		}
+	]
+}
