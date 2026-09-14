@@ -40,7 +40,8 @@
 					"height": 57,
 					"class": "HDI",
 					"fontWeight": "bold",
-					"text": ":xliff:... fully manage listbox settings?"
+					"text": ":xliff:... fully manage listbox settings?",
+					"stroke": "automatic"
 				},
 				"Picture1": {
 					"type": "picture",
@@ -58,7 +59,8 @@
 					"width": 220,
 					"height": 14,
 					"fontTheme": "additional",
-					"text": ":xliff:(4D v16 and above...)"
+					"text": ":xliff:(4D v16 and above...)",
+					"stroke": "automatic"
 				},
 				"TxtSorry1": {
 					"type": "text",
@@ -79,7 +81,8 @@
 					"height": 20,
 					"class": "HDI",
 					"fontWeight": "bold",
-					"text": ":xliff:How Do I..."
+					"text": ":xliff:How Do I...",
+					"stroke": "automatic"
 				},
 				"TxtSorry2": {
 					"type": "text",
@@ -90,7 +93,8 @@
 					"visibility": "hidden",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": ":xliff:Sorry"
+					"text": ":xliff:Sorry",
+					"stroke": "automatic"
 				},
 				"TxtSorry3": {
 					"type": "text",
@@ -108,11 +112,12 @@
 					"top": 280,
 					"left": 250,
 					"width": 90,
-					"height": 20,
 					"action": "accept",
 					"text": ":xliff:Demo",
 					"focusable": false,
 					"defaultButton": true,
+					"class": "default",
+					"method": "ObjectMethods/BtnDemo.4dm",
 					"events": [
 						"onClick"
 					]

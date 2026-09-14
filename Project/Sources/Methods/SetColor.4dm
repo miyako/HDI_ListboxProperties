@@ -1,10 +1,12 @@
-//%attributes = {}
-C_TEXT:C284($1)
-C_LONGINT:C283($0)
+//%attributes = {"invisible":true}
+#DECLARE($mode : Text)->$result : Integer
+
+var $angle : Real
+var $red; $green; $blue; $n : Integer
 
 Case of 
 		
-	: ($1="background")
+	: ($mode="background")
 		
 		$angle:=((Selected record number:C246([TEST:1])/Records in selection:C76([TEST:1])))*2*Pi:K30:1
 		
@@ -16,10 +18,10 @@ Case of
 		
 		$blue:=0x00E0+Round:C94(0x001F*Cos:C18($angle); 0)
 		
-		$0:=($red << 16)+($green << 8)+$blue
+		$result:=($red << 16)+($green << 8)+$blue
 		
 		
-	: ($1="fontcolor")
+	: ($mode="fontcolor")
 		
 		$angle:=((Selected record number:C246([TEST:1])/Records in selection:C76([TEST:1])))*2*Pi:K30:1
 		
@@ -31,13 +33,13 @@ Case of
 		
 		$blue:=0x0040+Round:C94(0x0040*Cos:C18($angle); 0)
 		
-		$0:=($red << 16)+($green << 8)+$blue
+		$result:=($red << 16)+($green << 8)+$blue
 		
-	: ($1="fontstyle")
+	: ($mode="fontstyle")
 		
 		$n:=Selected record number:C246([TEST:1])
 		
-		$0:=Choose:C955(($n-1)%4; Plain:K14:1; Italic:K14:3; Bold:K14:2; Underline:K14:4)
+		$result:=Choose:C955(($n-1)%4; Plain:K14:1; Italic:K14:3; Bold:K14:2; Underline:K14:4)
 		
 End case 
 

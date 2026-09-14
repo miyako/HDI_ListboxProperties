@@ -1,529 +1,544 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="ja">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="en-US">
     <header>
       <note/>
     </header>
     <body>
       <group resname="HDI">
-        <!-- common stuff -->
         <trans-unit resname="Quit 4D">
           <source>Quit 4D</source>
-          <target>終了する</target>
+          <target>Quit 4D</target>
         </trans-unit>
         <trans-unit resname="Demo">
           <source>Demo</source>
-          <target>スタート</target>
+          <target>Demo</target>
         </trans-unit>
         <trans-unit resname="(4D v16 and above...)">
           <source>(4D v16 and above...)</source>
-          <target>(4D v16 以降...)</target>
+          <target>(4D v16 and above...)</target>
         </trans-unit>
         <trans-unit resname="How Do I...">
           <source>How Do I...</source>
-          <target>教えて...</target>
+          <target>How Do I...</target>
         </trans-unit>
         <trans-unit resname="Demo...">
           <source>Demo...</source>
-          <target>デモンストレーション...</target>
+          <target>Demo...</target>
         </trans-unit>
         <trans-unit resname="The plugin xxx is mandatory">
           <source>The plugin xxx is mandatory</source>
-          <target>プラグインxxxが必要です。</target>
+          <target>The plugin xxx is mandatory</target>
         </trans-unit>
         <trans-unit resname="Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.">
           <source>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
-          <target>このHDIをデザインモードで開いてはなりません。開いてしまった場合，フォームやメソッドが不完全になってしまう恐れがあります。</target>
+          <target>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</target>
         </trans-unit>
         <trans-unit resname="Sorry">
           <source>Sorry, this &quot;How do I...&quot; (HDI) &#x0D;example must be used with&#x0D;a newer version of 4D&#x0D;(v16 and above).</source>
-          <target>申し訳ありません。この&quot;How do I...&quot; (HDI) &#x0D;サンプルは，より新しいバージョンの4D（v16以降）で開かなければなりません。</target>
+          <target>Sorry, this &quot;How do I...&quot; (HDI) &#x0D;example must be used with&#x0D;a newer version of 4D&#x0D;(v16 and above).</target>
         </trans-unit>
-        <!-- specific stuff -->
         <trans-unit resname="... fully manage listbox settings?">
           <source>... fully manage listbox settings?</source>
-          <target>... リストボックスのプロパティをランゲージでコントロールするには?</target>
+          <target>... fully manage listbox settings?</target>
         </trans-unit>
         <trans-unit resname="Properties">
           <source>Properties</source>
-          <target>プロパティ</target>
+          <target>Properties</target>
         </trans-unit>
         <trans-unit resname="Selection mode">
           <source>Selection mode</source>
-          <target>選択モード</target>
+          <target>Selection mode</target>
         </trans-unit>
         <trans-unit resname="Column resizing mode">
           <source>Column resizing mode</source>
-          <target>カラム自動リサイズ</target>
+          <target>Column resizing mode</target>
         </trans-unit>
         <trans-unit resname="Truncate">
           <source>Truncate</source>
-          <target>エリプシスを使用して省略</target>
+          <target>Truncate</target>
         </trans-unit>
         <trans-unit resname="Extra rows">
           <source>Extra rows</source>
-          <target>追加の空白の行を非表示</target>
+          <target>Extra rows</target>
         </trans-unit>
         <trans-unit resname="Allow wordwrap">
           <source>Allow wordwrap</source>
-          <target>ワードラップ</target>
+          <target>Allow wordwrap</target>
         </trans-unit>
         <trans-unit resname="Column resizable">
           <source>Column resizable</source>
-          <target>列サイズ変更可</target>
+          <target>Column resizable</target>
         </trans-unit>
         <trans-unit resname="Hide system highlight">
           <source>Hide system highlight</source>
-          <target>セレクションハイライトを非表示</target>
+          <target>Hide system highlight</target>
         </trans-unit>
         <trans-unit resname="Row height unit">
           <source>Row height unit</source>
-          <target>行の高さ単位</target>
+          <target>Row height unit</target>
         </trans-unit>
         <trans-unit resname="Double click on row">
           <source>Double click on row</source>
-          <target>行をダブルクリック</target>
+          <target>Double click on row</target>
         </trans-unit>
         <trans-unit resname="Detail form name">
           <source>Detail form name</source>
-          <target>詳細フォーム名</target>
+          <target>Detail form name</target>
         </trans-unit>
         <trans-unit resname="Sortable">
           <source>Sortable</source>
-          <target>ソート可</target>
+          <target>Sortable</target>
         </trans-unit>
         <trans-unit resname="Display type">
           <source>Display type</source>
-          <target>表示タイプ</target>
+          <target>Display type</target>
         </trans-unit>
         <trans-unit resname="Background color expression">
           <source>Background color expression</source>
-          <target>背景色式</target>
+          <target>Background color expression</target>
         </trans-unit>
         <trans-unit resname="Font color expression">
           <source>Font color expression</source>
-          <target>フォントカラー式</target>
+          <target>Font color expression</target>
         </trans-unit>
         <trans-unit resname="Font style expression">
           <source>Font style expression</source>
-          <target>スタイル式</target>
+          <target>Font style expression</target>
         </trans-unit>
         <trans-unit resname="Column min width">
           <source>Column min width</source>
-          <target>列最小幅</target>
+          <target>Column min width</target>
         </trans-unit>
         <trans-unit resname="Column max width">
           <source>Column max width</source>
-          <target>列最大幅</target>
+          <target>Column max width</target>
         </trans-unit>
         <trans-unit resname="Highlight set">
           <source>Highlight set</source>
-          <target>ハイライトセット</target>
+          <target>Highlight set</target>
         </trans-unit>
         <trans-unit resname="Named selection">
           <source>Named selection</source>
-          <target>命名セレクション</target>
+          <target>Named selection</target>
         </trans-unit>
         <trans-unit resname="Single-Click Edit">
           <source>Single-Click Edit</source>
-          <target>シングルクリック編集</target>
+          <target>Single-Click Edit</target>
         </trans-unit>
         <trans-unit resname="Multi-Style">
           <source>Multi-Style</source>
-          <target>マルチスタイル</target>
+          <target>Multi-Style</target>
         </trans-unit>
         <trans-unit resname="Display footer">
           <source>Display footer</source>
-          <target>フッター表示</target>
+          <target>Display footer</target>
         </trans-unit>
         <trans-unit resname="Display header">
           <source>Display header</source>
-          <target>ヘッダー表示</target>
+          <target>Display header</target>
         </trans-unit>
         <trans-unit resname="Hor scrollbar height">
           <source>Hor scrollbar width</source>
-          <target>水平スクロールバー高さ</target>
+          <target>Hor scrollbar width</target>
         </trans-unit>
         <trans-unit resname="Ver scrollbar width">
           <source>Ver scrollbar height</source>
-          <target>垂直スクロールバー幅</target>
+          <target>Ver scrollbar height</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to get (not set!) the height of the horizontal scrollbar (OS dependent).">
           <source>This parameter allows you to get (not set!) the height of the horizontal scrollbar (OS dependent).</source>
-          <target>水平スクロールバーの高さを取得（設定は無理！）することができます。</target>
+          <target>This parameter allows you to get (not set!) the height of the horizontal scrollbar (OS dependent).</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to get (not set!) the width of the vertical scrollbar (OS dependent).">
           <source>This parameter allows you to get (not set!) the width of the vertical scrollbar (OS dependent).</source>
-          <target>垂直スクロールバーの幅を取得（設定は無理！）することができます。</target>
+          <target>This parameter allows you to get (not set!) the width of the vertical scrollbar (OS dependent).</target>
         </trans-unit>
         <trans-unit resname="This parameter lets you permit or forbid multi-style text in columns.">
           <source>This parameter lets you permit or forbid multi-style text in columns.</source>
-          <target>マルチスタイルテキストを使用または不使用に設定することができます。</target>
+          <target>This parameter lets you permit or forbid multi-style text in columns.</target>
         </trans-unit>
         <trans-unit resname="Col1 Multi-style">
           <source>Col1 Multi-style</source>
-          <target>Col1マルチスタイル</target>
+          <target>Col1 Multi-style</target>
         </trans-unit>
         <trans-unit resname="Col2 Multi-style">
           <source>Col2 Multi-style</source>
-          <target>Col2マルチスタイル</target>
+          <target>Col2 Multi-style</target>
         </trans-unit>
         <trans-unit resname="LB Multi-style : No">
           <source>LB Multi-style : No</source>
-          <target>全体で使用しない</target>
+          <target>LB Multi-style : No</target>
         </trans-unit>
         <trans-unit resname="LB Multi-style : Yes">
           <source>LB Multi-style : Yes</source>
-          <target>全体で使用する</target>
+          <target>LB Multi-style : Yes</target>
         </trans-unit>
         <trans-unit resname="Col1 Multi-style : No">
           <source>Col1 Multi-style : No</source>
-          <target>Col1で使用しない</target>
+          <target>Col1 Multi-style : No</target>
         </trans-unit>
         <trans-unit resname="Col1 Multi-style : Yes">
           <source>Col1 Multi-style : Yes</source>
-          <target>Col1で使用する</target>
+          <target>Col1 Multi-style : Yes</target>
         </trans-unit>
         <trans-unit resname="Single-Click Edit : Yes">
           <source>Single-Click Edit : Yes</source>
-          <target>シングルクリック有効</target>
+          <target>Single-Click Edit : Yes</target>
         </trans-unit>
         <trans-unit resname="Single-Click Edit : No">
           <source>Single-Click Edit : Yes</source>
-          <target>シングルクリック無効</target>
+          <target>Single-Click Edit : Yes</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to define all enterable columns as editable with a single click or not.">
           <source>This parameter allows you to define all enterable columns as editable with a single click or not.</source>
-          <target>入力可セルを1回クリックするだけで編集モードに切り替わるように設定します。</target>
+          <target>This parameter allows you to define all enterable columns as editable with a single click or not.</target>
         </trans-unit>
         <trans-unit resname="Selection name &quot;SelA&quot;">
           <source>Selection name &quot;SelA&quot;</source>
-          <target>命名セレクション &quot;SelA&quot;</target>
+          <target>Selection name &quot;SelA&quot;</target>
         </trans-unit>
         <trans-unit resname="Selection name &quot;SelB&quot;">
           <source>Selection name &quot;SelB&quot;</source>
-          <target>命名セレクション &quot;SelB&quot;</target>
+          <target>Selection name &quot;SelB&quot;</target>
         </trans-unit>
         <trans-unit resname="Get Selection name">
           <source></source>
-          <target>セレクション名</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="Get Set">
           <source></source>
-          <target>セット名</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="Highlight set : $SetB">
           <source></source>
-          <target>ハイライトセット $SetB</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="Highlight set : $SetA">
           <source></source>
-          <target>ハイライトセット $SetA</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to define the name of the highlight">
           <source></source>
-          <target>&quot;セレクション型&quot; リストボックスのハイライトセット名を決定します。</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to set the maximum width of columns.">
           <source></source>
-          <target>リストボックス列の最大幅を決定します。&#xD;リストボックス全体あるいは特定の列に対して設定することができます。</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="This parameters allows you to set the minimum width of columns.">
           <source></source>
-          <target>リストボックス列の最小幅を決定します。&#xD;リストボックス全体あるいは特定の列に対して設定することができます。</target>
+          <target></target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to hide or show the headers of a list box.">
           <source>This parameter allows you to hide or show the headers of a list box.</source>
-          <target>リストボックスのヘッダーを表示または非表示に設定することができます。</target>
+          <target>This parameter allows you to hide or show the headers of a list box.</target>
         </trans-unit>
         <trans-unit resname="Hide header">
           <source>Hide header</source>
-          <target>ヘッダー非表示</target>
+          <target>Hide header</target>
         </trans-unit>
         <trans-unit resname="Show header">
           <source>Show header</source>
-          <target>ヘッダー表示</target>
+          <target>Show header</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to hide or show the footers of a list box.">
           <source>This parameter allows you to hide or show the footers of a list box.</source>
-          <target>リストボックスのフッターを表示または非表示に設定することができます。</target>
+          <target>This parameter allows you to hide or show the footers of a list box.</target>
         </trans-unit>
         <trans-unit resname="Show footer">
           <source>Show footer</source>
-          <target>フッター表示</target>
+          <target>Show footer</target>
         </trans-unit>
         <trans-unit resname="Hide footer">
           <source>Hide footer</source>
-          <target>フッター非表示</target>
+          <target>Hide footer</target>
         </trans-unit>
         <trans-unit resname="This parameter defines the number of rows that can be selected by the user.">
           <source>This parameter defines the number of rows that can be selected by the user.&#xD;
   &#xD;The possible values are &quot;none&quot;, &quot;single&quot; and &quot;multiple&quot;.</source>
-          <target>ユーザーが選択できる行数を決定します。&#xD;有効な値は，&quot;none&quot;, &quot;single&quot;, &quot;multiple&quot; のいずれかです。</target>
+          <target>This parameter defines the number of rows that can be selected by the user.&#xD;
+  &#xD;The possible values are &quot;none&quot;, &quot;single&quot; and &quot;multiple&quot;.</target>
         </trans-unit>
         <trans-unit resname="This parameter defines the way columns should be resized.">
-          <target>列のリサイズ方法です。&#xD;有効な値は，&quot;Manual&quot; または &quot;Automatic&quot; です。&#xD;違いを確認するために。ウィンドウをリサイズしてみてください。</target>
+          <source>This parameter defines the way columns should be resized.</source>
+          <target>This parameter defines the way columns should be resized.</target>
         </trans-unit>
         <trans-unit resname="This parameter defines the way contents of cells should be truncated.">
-          <target>セルに収まらないテキストを表示する方法です。&#xD;有効な値は，&quot;without ellipisis&quot; または &quot;with ellipsis&quot; です。&#xD;リストボックス全体あるいは特定の列に対して設定することができます。</target>
+          <source>This parameter defines the way contents of cells should be truncated.</source>
+          <target>This parameter defines the way contents of cells should be truncated.</target>
         </trans-unit>
         <trans-unit resname="All columns without &quot;…&quot;">
           <source>All columns without &quot;…&quot;</source>
-          <target>全列で&quot;…&quot;を表示しない</target>
+          <target>All columns without &quot;…&quot;</target>
         </trans-unit>
         <trans-unit resname="All columns with &quot;…&quot;">
           <source>All columns with &quot;…&quot;</source>
-          <target>全列で&quot;…&quot;を表示する</target>
+          <target>All columns with &quot;…&quot;</target>
         </trans-unit>
         <trans-unit resname="Col1 without &quot;…&quot;">
           <source>Col1 without &quot;…&quot;</source>
-          <target>列1で&quot;…&quot;を表示しない</target>
+          <target>Col1 without &quot;…&quot;</target>
         </trans-unit>
         <trans-unit resname="Col1 with &quot;…&quot;">
           <source>Col1 with &quot;…&quot;</source>
-          <target>列1で&quot;…&quot;を表示する</target>
+          <target>Col1 with &quot;…&quot;</target>
         </trans-unit>
         <trans-unit resname="Truncate mode Col1">
           <source>Truncate mode Col1</source>
-          <target>列1の表示モード</target>
+          <target>Truncate mode Col1</target>
         </trans-unit>
         <trans-unit resname="Truncate mode Col2">
           <source>Truncate mode Col2</source>
-          <target>列2の表示モード</target>
+          <target>Truncate mode Col2</target>
         </trans-unit>
         <trans-unit resname="Display">
           <source>Display</source>
-          <target>表示</target>
+          <target>Display</target>
         </trans-unit>
         <trans-unit resname="Hide">
           <source>Hide</source>
-          <target>非表示</target>
+          <target>Hide</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to set up the way the extra rows should be drawn">
-          <target>リスト下の余ったエリアをどのように表示するか決定します。&#xd;空の行を描画，あるいは空白を表示させることができます。</target>
+          <source>This parameter allows you to set up the way the extra rows should be drawn</source>
+          <target>This parameter allows you to set up the way the extra rows should be drawn</target>
         </trans-unit>
         <trans-unit resname="This parameter defines if the cells allow wordwrap or not.">
-          <target>テキストを折り返して表示するか決定します。&#xD;リストボックス全体あるいは特定の列に対して設定することができます。</target>
+          <source>This parameter defines if the cells allow wordwrap or not.</source>
+          <target>This parameter defines if the cells allow wordwrap or not.</target>
         </trans-unit>
         <trans-unit resname="Do not allow LB">
           <source>Do not allow LB</source>
-          <target>全列で折り返さない</target>
+          <target>Do not allow LB</target>
         </trans-unit>
         <trans-unit resname="Allow LB">
           <source>Allow LB</source>
-          <target>全列で折り返す</target>
+          <target>Allow LB</target>
         </trans-unit>
         <trans-unit resname="Do not allow Col1">
           <source>Do not allow Col1</source>
-          <target>Col1で折り返さない</target>
+          <target>Do not allow Col1</target>
         </trans-unit>
         <trans-unit resname="Allow Col1">
           <source>Allow Col1</source>
-          <target>Col1で折り返す</target>
+          <target>Allow Col1</target>
         </trans-unit>
         <trans-unit resname="Max Width (Col1)">
           <source>Max Width (Col1)</source>
-          <target>Col1最大幅</target>
+          <target>Max Width (Col1)</target>
         </trans-unit>
         <trans-unit resname="Max Width (Col2)">
           <source>Max Width (Col2)</source>
-          <target>Col2最大幅</target>
+          <target>Max Width (Col2)</target>
         </trans-unit>
         <trans-unit resname="Col Max Width 200 (col1)">
           <source>Col Max Width 200 (col1)</source>
-          <target>Col1最大幅200</target>
+          <target>Col Max Width 200 (col1)</target>
         </trans-unit>
         <trans-unit resname="Col Max Width 300 (Col1)">
           <source>Col Max Width 300 (Col1)</source>
-          <target>Col1最大幅300</target>
+          <target>Col Max Width 300 (Col1)</target>
         </trans-unit>
         <trans-unit resname="Col Max Width 200 (LB)">
           <source>Col Max Width 200 (LB)</source>
-          <target>最大幅200（全体）</target>
+          <target>Col Max Width 200 (LB)</target>
         </trans-unit>
         <trans-unit resname="Col Max Width 300 (LB)">
           <source>Col Max Width 300 (LB)</source>
-          <target>最大幅300（全体）</target>
+          <target>Col Max Width 300 (LB)</target>
         </trans-unit>
         <trans-unit resname="Word wrap Col1">
           <source>Word wrap Col1</source>
-          <target>Col1ワードラップ</target>
+          <target>Word wrap Col1</target>
         </trans-unit>
         <trans-unit resname="Word wrap Col2">
           <source>Word wrap Col2</source>
-          <target>Col2ワードラップ</target>
+          <target>Word wrap Col2</target>
         </trans-unit>
         <trans-unit resname="Col Min Width 100 (LB)">
           <source>Col Min Width 100 (LB)</source>
-          <target>最小幅100（全体）</target>
+          <target>Col Min Width 100 (LB)</target>
         </trans-unit>
         <trans-unit resname="Col Min Width 50 (LB)">
           <source>Col Min Width 50 (LB)</source>
-          <target>最小幅50（全体）</target>
+          <target>Col Min Width 50 (LB)</target>
         </trans-unit>
         <trans-unit resname="Min Width (Col1)">
           <source>Min Width (Col1)</source>
-          <target>Col1最小幅</target>
+          <target>Min Width (Col1)</target>
         </trans-unit>
         <trans-unit resname="Min Width (Col2)">
           <source>Min Width (Col2)</source>
-          <target>Col2最小幅</target>
+          <target>Min Width (Col2)</target>
         </trans-unit>
         <trans-unit resname="Col Min Width 50 (Col1)">
           <source>Col Min Width 50 (Col1)</source>
-          <target>Col1最小幅50</target>
+          <target>Col Min Width 50 (Col1)</target>
         </trans-unit>
         <trans-unit resname="Col Min Width 100 (Col1)">
           <source>Col Min Width 100 (Col1)</source>
-          <target>Col1最小幅100</target>
+          <target>Col Min Width 100 (Col1)</target>
         </trans-unit>
         <trans-unit resname="This parameters defines what should happen when a row is double-clicked by the user.">
-          <target>ユーザーが行をダブルクリックしたときに実行されるアクションを決定します。&#xD;有効な値は，&quot;Do nothing&quot;, &quot;Edit record&quot;, &quot;Display record&quot; のいずれかです。</target>
+          <source>This parameters defines what should happen when a row is double-clicked by the user.</source>
+          <target>This parameters defines what should happen when a row is double-clicked by the user.</target>
         </trans-unit>
         <trans-unit resname="Do nothing">
           <source>Do nothing</source>
-          <target>何もしない</target>
+          <target>Do nothing</target>
         </trans-unit>
         <trans-unit resname="Edit record">
           <source>Edit record</source>
-          <target>レコード編集</target>
+          <target>Edit record</target>
         </trans-unit>
         <trans-unit resname="Display record">
           <source>Display record</source>
-          <target>レコード表示</target>
+          <target>Display record</target>
         </trans-unit>
         <trans-unit resname="Get action">
           <source>Get action</source>
-          <target>アクション</target>
+          <target>Get action</target>
         </trans-unit>
         <trans-unit resname="None">
           <source>None</source>
-          <target>なし</target>
+          <target>None</target>
         </trans-unit>
         <trans-unit resname="Single">
           <source>Single</source>
-          <target>単一</target>
+          <target>Single</target>
         </trans-unit>
         <trans-unit resname="Multiple">
           <source>Multiple</source>
-          <target>複数</target>
+          <target>Multiple</target>
         </trans-unit>
         <trans-unit resname="Manual">
           <source>Manual</source>
-          <target>非自動</target>
+          <target>Manual</target>
         </trans-unit>
         <trans-unit resname="Automatic">
           <source>Automatic</source>
-          <target>自動</target>
+          <target>Automatic</target>
         </trans-unit>
         <trans-unit resname="Random">
           <source>Random</source>
-          <target>ランダム</target>
+          <target>Random</target>
         </trans-unit>
         <trans-unit resname="Plain | Underline">
           <source>Plain | Underline</source>
-          <target>標準 | アンダーライン</target>
+          <target>Plain | Underline</target>
         </trans-unit>
         <trans-unit resname="Get expression">
           <source>Get expression</source>
-          <target>式</target>
+          <target>Get expression</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to set the expression for the font style.">
-          <target>フォントスタイルを決定するための式を設定します。&#xD;リストボックス全体あるいは特定の列が対象ですが，&quot;セレクション型&quot; リストボックスでなければなりません。</target>
+          <source>This parameter allows you to set the expression for the font style.</source>
+          <target>This parameter allows you to set the expression for the font style.</target>
         </trans-unit>
         <trans-unit resname="Method">
           <source>Method</source>
-          <target>メソッド</target>
+          <target>Method</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to set the expression for the font color.">
-          <target>フォントカラーを決定するための式を設定します。&#xD;リストボックス全体あるいは特定の列が対象ですが，&quot;セレクション型&quot; リストボックスでなければなりません。</target>
+          <source>This parameter allows you to set the expression for the font color.</source>
+          <target>This parameter allows you to set the expression for the font color.</target>
         </trans-unit>
         <trans-unit resname="This parameter allows you to set the expression for the background color.">
-          <target>背景色を決定するための式を設定します。&#xD;リストボックス全体あるいは特定の列が対象ですが，&quot;セレクション型&quot; リストボックスでなければなりません。</target>
+          <source>This parameter allows you to set the expression for the background color.</source>
+          <target>This parameter allows you to set the expression for the background color.</target>
         </trans-unit>
         <trans-unit resname="This parameter defines if the columns can be resized or not.">
-          <target>列のリサイズを許可するかどうかを決定します。&#xD;リストボックス全体あるいは特定の列に対して設定することができます。</target>
+          <source>This parameter defines if the columns can be resized or not.</source>
+          <target>This parameter defines if the columns can be resized or not.</target>
         </trans-unit>
         <trans-unit resname="All Col.: No">
-          <target>全列で許可しない</target>
+          <source>All Col.: No</source>
+          <target>All Col.: No</target>
         </trans-unit>
         <trans-unit resname="All Col.: Yes">
-          <target>全列で許可する</target>
+          <source>All Col.: Yes</source>
+          <target>All Col.: Yes</target>
         </trans-unit>
         <trans-unit resname="Col1: yes">
-          <target>Col1で許可する</target>
+          <source>Col1: yes</source>
+          <target>Col1: yes</target>
         </trans-unit>
         <trans-unit resname="Col1: no">
-          <target>Col1で許可しない</target>
+          <source>Col1: no</source>
+          <target>Col1: no</target>
         </trans-unit>
         <trans-unit resname="This parameter defines if the system highlight should be displayed or not.">
-          <target>システムハイライトを表示または非表示に設定します。&#xD;外観は変化しませんが，行は選択されています。&#xD;これにより，独自のハイライトカラーを表現することができます。</target>
+          <source>This parameter defines if the system highlight should be displayed or not.</source>
+          <target>This parameter defines if the system highlight should be displayed or not.</target>
         </trans-unit>
         <trans-unit resname="Show">
           <source>Show</source>
-          <target>表示</target>
+          <target>Show</target>
         </trans-unit>
         <trans-unit resname="Highlight hidden">
           <source>Highlight hidden</source>
-          <target>ハイライト非表示</target>
+          <target>Highlight hidden</target>
         </trans-unit>
         <trans-unit resname="This parameter defines the unit to be used for the row height.">
-          <target>行の高さを設定する単位です。&#xD;有効な値は，&quot;Pixels&quot; または &quot;Lines&quot; のどちらかです。&#xD;行の高さを配列で制御している場合，設定がリセットされるので注意してください。</target>
+          <source>This parameter defines the unit to be used for the row height.</source>
+          <target>This parameter defines the unit to be used for the row height.</target>
         </trans-unit>
         <trans-unit resname="2 Lines">
           <source>2 Lines</source>
-          <target>2 行</target>
+          <target>2 Lines</target>
         </trans-unit>
         <trans-unit resname="60 Pixels">
           <source>60 Pixels</source>
-          <target>60 ピクセル</target>
+          <target>60 Pixels</target>
         </trans-unit>
         <trans-unit resname="This parameter defines the name of the detail form to be used to edit or display records when the user double clicks on a row.">
           <source>This parameter defines the name of the detail form to be used to edit or display records when the user double clicks on a row.</source>
-          <target>ユーザーが行をダブルクリックしたときに使用される詳細フォームの名前です。</target>
+          <target>This parameter defines the name of the detail form to be used to edit or display records when the user double clicks on a row.</target>
         </trans-unit>
         <trans-unit resname="This parameter defines if the list box should be sortable or not by clicking on the headers.">
           <source>This parameter defines if the list box should be sortable or not by clicking on the headers.</source>
-          <target>ヘッダーをクリックして列をソートできるかどうかを決定します。</target>
+          <target>This parameter defines if the list box should be sortable or not by clicking on the headers.</target>
         </trans-unit>
         <trans-unit resname="Do not allow sort">
           <source>Do not allow sort</source>
-          <target>ソートを許可しない</target>
+          <target>Do not allow sort</target>
         </trans-unit>
         <trans-unit resname="Allow sort">
           <source>Allow sort</source>
-          <target>ソートを許可する</target>
+          <target>Allow sort</target>
         </trans-unit>
         <trans-unit resname="Sort allowed">
           <source>Sort allowed</source>
-          <target>ソート可</target>
+          <target>Sort allowed</target>
         </trans-unit>
         <trans-unit resname="Display (Col2)">
           <source>Display (Col2)</source>
-          <target>Col2表示タイプ</target>
+          <target>Display (Col2)</target>
         </trans-unit>
         <trans-unit resname="Display (Col1)">
           <source>Display (Col1)</source>
-          <target>Col1表示タイプ</target>
+          <target>Display (Col1)</target>
         </trans-unit>
         <trans-unit resname="3 state checkbox (Col1)">
           <source>3 state checkbox (Col1)</source>
-          <target>Col1スリーステート</target>
+          <target>3 state checkbox (Col1)</target>
         </trans-unit>
         <trans-unit resname="Numeric format (Col1)">
           <source>Numeric format (Col1)</source>
-          <target>Col1数値フォーマット</target>
+          <target>Numeric format (Col1)</target>
         </trans-unit>
         <trans-unit resname="3 state checkbox (LB)">
           <source>3 state checkbox (LB)</source>
-          <target>すべてスリーステート</target>
+          <target>3 state checkbox (LB)</target>
         </trans-unit>
         <trans-unit resname="Numeric format (LB)">
           <source>Numeric format (LB)</source>
-          <target>すべて数値フォーマット</target>
+          <target>Numeric format (LB)</target>
         </trans-unit>
         <trans-unit resname="This parameter defines how the numeric columns should be displayed.">
-          <target>数値型の列をどのように表示するかを決定します。&#xD;有効な値は，&quot;numeric format&quot; または &quot;three states checkbox&quot; のどちらかです。&#xD; なお，スリーステートチェックボックスは，-4（どちらでもないかつクリック不可）から2（どちらでもないかつクリック可）まで7とおりの値を取り得ます。</target>
+          <source>This parameter defines how the numeric columns should be displayed.</source>
+          <target>This parameter defines how the numeric columns should be displayed.</target>
         </trans-unit>
         <trans-unit resname="SET">
           <source>SET</source>
@@ -543,66 +558,64 @@
         </trans-unit>
         <trans-unit resname="This parameter allows you to define the name of the selection set used in &quot;named selection&quot; type list boxes.">
           <source>This parameter allows you to define the name of the selection set used in "named selection" type list boxes.</source>
-          <target>&quot;named selection&quot; タイプのリストボックスで使用するセレクションセットの名前を定義します。</target>
+          <target>This parameter allows you to define the name of the selection set used in "named selection" type list boxes.</target>
         </trans-unit>
         <trans-unit resname="Pixels">
           <source>Pixels</source>
-          <target>ピクセル</target>
+          <target>Pixels</target>
         </trans-unit>
         <trans-unit resname="Lines">
           <source>Lines</source>
-          <target>行</target>
+          <target>Lines</target>
         </trans-unit>
         <trans-unit resname="Without ellipsis">
           <source>Without ellipsis</source>
-          <target>省略記号なし</target>
+          <target>Without ellipsis</target>
         </trans-unit>
         <trans-unit resname="With ellipsis">
           <source>With ellipsis</source>
-          <target>省略記号あり</target>
+          <target>With ellipsis</target>
         </trans-unit>
         <trans-unit resname="Hidden">
           <source>Hidden</source>
-          <target>非表示</target>
+          <target>Hidden</target>
         </trans-unit>
         <trans-unit resname="Displayed">
           <source>Displayed</source>
-          <target>表示</target>
+          <target>Displayed</target>
         </trans-unit>
         <trans-unit resname="three states">
           <source>three states</source>
-          <target>3状態</target>
+          <target>three states</target>
         </trans-unit>
         <trans-unit resname="numeric format">
           <source>numeric format</source>
-          <target>数値フォーマット</target>
+          <target>numeric format</target>
         </trans-unit>
         <trans-unit resname="highlight set: ">
           <source>highlight set: </source>
-          <target>ハイライトセット: </target>
+          <target>highlight set: </target>
         </trans-unit>
         <trans-unit resname="highlight set: none">
           <source>highlight set: none</source>
-          <target>ハイライトセット: なし</target>
+          <target>highlight set: none</target>
         </trans-unit>
         <trans-unit resname="Selecion name: ">
           <source>Selecion name: </source>
-          <target>セレクション名: </target>
+          <target>Selecion name: </target>
         </trans-unit>
         <trans-unit resname="Selecion name: none">
           <source>Selecion name: none</source>
-          <target>セレクション名: なし</target>
+          <target>Selecion name: none</target>
         </trans-unit>
         <trans-unit resname="Hor scrollbar width">
           <source>Hor scrollbar width</source>
-          <target>水平スクロールバー幅</target>
+          <target>Hor scrollbar width</target>
         </trans-unit>
         <trans-unit resname="Ver scrollbar height">
           <source>Ver scrollbar height</source>
-          <target>垂直スクロールバー高さ</target>
+          <target>Ver scrollbar height</target>
         </trans-unit>
-
-
       </group>
     </body>
   </file>

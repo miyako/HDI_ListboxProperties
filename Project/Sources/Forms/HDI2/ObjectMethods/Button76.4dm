@@ -1,8 +1,8 @@
-C_TEXT:C284($selName)
+var $selName : Text
 $selName:=LISTBOX Get property:C917(*; "LB19"; lk named selection:K53:67)
 
 If ($selName#"")
-	vResult:="Selecion name: "+$selName
+	vResult:=Localized string:C991("Selecion name: ")+$selName
 Else 
-	vResult:="Selecion name: none"
+	vResult:=Localized string:C991("Selecion name: none")
 End if 
